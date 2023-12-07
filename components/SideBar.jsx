@@ -5,11 +5,10 @@ import ProfileMember from "./ProfileMember";
 
 const SideBar = () => {
   return (
-    <div className="px-4 w-80 min-h-full bg-base-300 py-12 grid-rows-[auto,1fr,auto]">
+    <div className="px-4 w-80 min-h-full bg-base-300 py-12 grid grid-rows-[auto,1fr,auto]">
       <SideBarHeader />
       <NavLinks />
       <ProfileMember />
-      SideBar
     </div>
   );
 };
