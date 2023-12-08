@@ -14,7 +14,7 @@ import { useAuth } from "@clerk/nextjs";
 
 const NewTour = () => {
   const queryClient = useQueryClient();
-  const { userId } = useAuthuth();
+  const { userId } = useAuth();
   const {
     mutate,
     isPending,
