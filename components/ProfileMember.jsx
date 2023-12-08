@@ -1,7 +1,10 @@
+import { fetchOrGenerateTokens } from "@/utils/action";
 import { UserButton, auth, currentUser } from "@clerk/nextjs";
 
 const ProfileMember = async () => {
   const user = await currentUser();
+  const { userId } = auth();
+  await fetchOrGenerateTokens(userId);
 
   return (
     <div className="px-4 flex items-center gap-2">
