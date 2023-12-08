@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const TourInfo = () => {
-  return (
-    <div>TourInfo</div>
-  )
-}
+const TourInfo = ({ tour }) => {
+  console.log(tour);
+  return <div>TourInfo</div>;
+};
 
-export default TourInfo
+export default TourInfo;
