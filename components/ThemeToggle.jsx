@@ -8,7 +8,7 @@ const themes = {
 };
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(themes.winter);
+  const [theme, setTheme] = useState(themes.dark);
 
   const toogleTheme = () => {
     const newTheme = theme === themes.light ? themes.dark : themes.light;
