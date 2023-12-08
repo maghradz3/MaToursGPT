@@ -68,13 +68,13 @@ const Chat = () => {
           <input
             type="text"
             placeholder="Message MaToursGPT"
-            className="input input-bordered join-item w-full"
+            className="placeholder:text-sm pl-2 md:input input-bordered join-item w-full md:placeholder:text-lg  "
             value={text}
             required
             onChange={(e) => setText(e.target.value)}
           />
           <button
-            className="btn btn-primary join-item"
+            className=" sm:text-sm btn btn-primary join-item text-md  "
             type="submit"
             disabled={isPending}
           >

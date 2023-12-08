@@ -60,19 +60,22 @@ const NewTour = () => {
         <div className="join w-full">
           <input
             type="text"
-            className="input input-bordered join-item w-full"
+            className="input input-bordered join-item w-full placeholder:text-sm md:placeholder:text-lg "
             name="city"
             required
             placeholder="City"
           />
           <input
             type="text"
-            className="input input-bordered join-item w-full"
+            className="input input-bordered join-item w-full placeholder:text-sm md:placeholder:text-lg "
             name="country"
             required
             placeholder="Country"
           />
-          <button className="btn btn-primary join-item" type="submit ">
+          <button
+            className="btn btn-primary join-item w-1/4 md:2-2xl"
+            type="submit "
+          >
             Generate Tour
           </button>
         </div>

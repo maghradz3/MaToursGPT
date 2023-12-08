@@ -13,12 +13,12 @@ const TousPage = () => {
   });
   return (
     <>
-      <form className="max-w-lg mb-12">
+      <form className="max-w-lg mb-12 mt-5">
         <div className="join w-wull">
           <input
             type="text"
             placeholder="enter city or country here"
-            className="input input-bordered join-item w-full"
+            className="input input-bordered join-item w-full "
             onChange={(e) => setSearchTerm(e.target.value)}
             value={searchTerm}
             required
