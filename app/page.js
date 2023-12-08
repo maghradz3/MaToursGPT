@@ -5,7 +5,9 @@ const HomePage = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-6xl font-bold text-primary">MaToursGPT</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-primary">
+            MaToursGPT
+          </h1>
           <p className="py-6 text-lg leading-loose">
             MaToursGPT: Your AI language companion. Powered by OpenAI, it
             enhances your conversations, content creation, and more!
