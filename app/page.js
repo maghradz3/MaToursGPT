@@ -1,24 +1,28 @@
 import Link from "next/link";
 
-const HomePage = () => {
+export default function HomePage() {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary">
-            MaToursGPT
-          </h1>
-          <p className="py-6 text-lg leading-loose">
-            MaToursGPT: Your AI language companion. Powered by OpenAI, it
-            enhances your conversations, content creation, and more!
+    <div
+      className="hero min-h-screen"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1675271591211-126ad94e495d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      }}
+    >
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-lg">
+          <h1 className="mb-5 text-5xl font-bold">MaToursGPT</h1>
+          <p className="mb-5 text-slate-300">
+            MaToursGPT: Your AI language companion. With OpenAI, it powers your
+            conversations, you can schedule tours and get general information
+            about everything!
           </p>
-          <Link href="/chat" className="btn btn-accent">
-            Get Started!
+          <Link href="/chat" className="btn btn-primary">
+            Get Started
           </Link>
         </div>
       </div>
     </div>
   );
-};
-
-export default HomePage;
+}

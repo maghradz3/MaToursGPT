@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "MaToursGPT",
   description:
-    "MaToursGPT: Your AI language companion. Powered by OpenAI, it enhances your conversations, content creation, and more!",
+    "MaToursGPT: MaToursGPT: Your AI language companion. With OpenAI, it powers your conversations, you can schedule tours and get general information about everything!",
 };
 
 export default function RootLayout({ children }) {

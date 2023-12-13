@@ -4,6 +4,8 @@ import { getAllTours } from "@/utils/action";
 import { useQuery } from "@tanstack/react-query";
 import ToursList from "./ToursList";
 import { useState } from "react";
+import { fadeIn } from "@/variants";
+import { motion } from "framer-motion";
 
 const TousPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -13,7 +15,13 @@ const TousPage = () => {
   });
   return (
     <>
-      <form className="max-w-lg mb-12 mt-5">
+      <motion.form
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="max-w-lg mb-12 mt-5"
+      >
         <div className="join w-wull">
           <input
             type="text"
@@ -32,7 +40,7 @@ const TousPage = () => {
             {isPending ? "please wait..." : "Search"}
           </button>
         </div>
-      </form>
+      </motion.form>
       {isPending ? (
         <span className="loading"></span>
       ) : (

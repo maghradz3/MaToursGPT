@@ -9,6 +9,8 @@ import { useAuth } from "@clerk/nextjs";
 import { useMutation } from "@tanstack/react-query";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { fadeIn } from "@/variants";
+import { motion } from "framer-motion";
 
 const Chat = () => {
   const { userId } = useAuth();
@@ -63,7 +65,14 @@ const Chat = () => {
         {isPending ? <span className="loading"></span> : null}
       </div>
 
-      <form onSubmit={handleSubmit} className="max-w-4xl pt-12">
+      <motion.form
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        onSubmit={handleSubmit}
+        className="max-w-4xl pt-12"
+      >
         <div className="join w-full">
           <input
             type="text"
@@ -81,7 +90,7 @@ const Chat = () => {
             {isPending ? "Please Wait..." : "Ask Question"}
           </button>
         </div>
-      </form>
+      </motion.form>
     </div>
   );
 };
